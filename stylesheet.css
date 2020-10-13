@@ -18,21 +18,23 @@
     margin-right: auto;
 }
 
+.gallery-item {
+   margin: 0 auto;
+}
+
 .gallery-img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-   
+    border: 1px black solid;
 }
 
 
 /* grid media */
-@media (max-width: 600px) {
-    .gallery-item {
-        
-    }
+@media screen and (max-width: 600px) {
 
-    #gallery-img {
-
+    #gallery {
+        grid-gap: 0;
     }
-}
+    }
+    
+@media screen and (min-width: 600px), (max-width: 1000px) {
+
+}    
