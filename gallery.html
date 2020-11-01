@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>Document</title>
+</head>
+<body id="gallery_body">
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="bio.html">Biography</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="row" id="gallery" >
+       
+        <figure class="gallery-item " id="gallery-item-1">
+            <img onclick="openModal();currentSlide(1)" class= "gallery-img hover-shadow"  src="photo/citylight_gallery.jpg" alt="light">
+                        
+     </figure>
+
+     <figure class="gallery-item " id="gallery-item-2">
+        <img onclick="openModal();currentSlide(1)" class= "gallery-img hover-shadow"  src="photo/apollo_gallery.jpg" alt="dog1">
+                    
+        </figure>
+
+ <figure class="gallery-item " id="gallery-item-3">
+    <img onclick="openModal();currentSlide(1)" class= "gallery-img hover-shadow"  src="photo/snowdog_gallery.jpg" alt="dog2">
+                
+        </figure>
+
+        <figure class="gallery-item " id="gallery-item-4">
+            <img onclick="openModal();currentSlide(1)" class= "gallery-img hover-shadow"  src="photo/bb.JPG" alt="Guurl">
+                        
+     </figure>
+
+        <figure  class="gallery-item " id="gallery-item-5">
+            <img  onclick="openModal();currentSlide(1)" class= "gallery-img hover-shadow" src="photo/Bloomington1.jpg" alt="img 2">
+ 
+        </figure>
+
+        <figure  class="gallery-item " id="gallery-item-6">
+            <img  onclick="openModal();currentSlide(1)" class= "gallery-img hover-shadow" src="photo/cabinz.jpg" alt="img 3">
+        </figure>
+
+        <figure  class="gallery-item " id="gallery-item-7">
+            <img  onclick="openModal();currentSlide(1)" class= "gallery-img hover-shadow" src="photo/firedan.JPG" alt="img 4">
+        </figure>
+
+        <figure  class="gallery-item " id="gallery-item-8">
+            <img  onclick="openModal();currentSlide(1)"  class= "gallery-img hover-shadow" src="photo/ghostbar.jpg" alt="img 5">
+        </figure>
+
+        <figure  class="gallery-item " id="gallery-item-9">
+            <img onclick="openModal();currentSlide(1)" class= "gallery-img hover-shadow" src="photo/grump.JPG" alt="img 6">
+        </figure>
+
+        
+        <figure  class="gallery-item " id="gallery-item-10">
+            <img  onclick="openModal();currentSlide(1)" class= "gallery-img hover-shadow" src="photo/redsunset.jpg" alt="img 7">
+        </figure>
+
+        
+        <figure  class="gallery-item " id="gallery-item-11">
+            <img onclick="openModal();currentSlide(1)"  class= "gallery-img hover-shadow" src="photo/tacos.jpg" alt="img 8">
+        </figure>
+
+        
+        <figure  class="gallery-item " id="gallery-item-12">
+            <img onclick="openModal();currentSlide(1)" class= "gallery-img hover-shadow" src="photo/takeiteasy.jpg" alt="img 9">
+        </figure>
+
+</div>
+
+
+
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 12</div>
+        <img src="photo/modal_citylight.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2/12</div>
+        <img src="photo/modal_apollo.JPG" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 12</div>
+        <img src="photo/modal_snowdogs.JPG" style="width:100%">
+      </div>
+
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 12</div>
+        <img src="photo/modal_bb.JPG" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">5 / 12</div>
+        <img src="photo/modal_Bloomington.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">6 / 12</div>
+        <img src="photo/modal_cabinz.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">7/ 12</div>
+        <img src="photo/modal_firedan.JPG" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 12</div>
+        <img src="photo/modal_ghostbar.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">9 / 12</div>
+        <img src="photo/modal_grump.JPG" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">10 / 12</div>
+        <img src="photo/modal_sunset.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">11 / 12</div>
+        <img src="photo/modal_tacos.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">12 / 12</div>
+        <img src="photo/modal_takeiteasy.jpg" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      
+      <div class="column">
+        <img class="demo" src="photo/thumbnail_citylight.JPG" onclick="currentSlide(1)" alt="Citylights">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="photo/thumbnail_apollo.JPG" onclick="currentSlide(2)" alt="Appllo">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="photo/thumbnail_snowdogs.JPG" onclick="currentSlide(3)" alt="Snow dogs">
+      </div>
+      
+      <div class="column">
+        <img class="demo" src="photo/thumbnail_bb.JPG" onclick="currentSlide(4)" alt="BB">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="photo/thumbnail_Bloomington.jpg" onclick="currentSlide(5)" alt="Bloomington">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="photo/thumbnail_cabinz.jpg" onclick="currentSlide(6)" alt="Cabins">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="photo/thumbnail_firedan.JPG" onclick="currentSlide(7)" alt="Dan">
+      </div>
+      
+      <div class="column">
+        <img class="demo" src="photo/thumbnail_ghostbar.jpg" onclick="currentSlide(8)" alt="HalloweenBar">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="photo/thuumbnail_grump.JPG" onclick="currentSlide(9)" alt="Ian">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="photo/thumbnail_redsunset.jpg" onclick="currentSlide(10)" alt="Sunset Indiana">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="photo/thumbnail_tacos.JPG" onclick="currentSlide(11)" alt="Philly Tacos">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="photo/thumbnail_takeiteasy.jpg" onclick="currentSlide(12)" alt="Easy bus">
+      </div>
+    
+    </div>
+  </div>
+
+
+</body>
+<foot><script src="script.js"></script></foot>
+</html>
